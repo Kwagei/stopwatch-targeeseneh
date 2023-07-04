@@ -7,13 +7,22 @@
 <body>
   <div class="timer">
     <h1 id="timer-display">00:00:00</h1>
+    
+    <div class="input-box">
+      <input type="number" placeholder="hour" required disabled>
+      <input type="number" placeholder="minute" required disabled>
+      <input type="number" placeholder="second" required disabled>
+    </div>
+
     <div>
+      <button onclick="enableInputFields()">Set Timer</button>
       <button onclick="startTimer()">Start</button>
       <button onclick="pauseTimer()">Pause</button>
+      <button onclick="continueTime()">Continue</button>
       <button onclick="resetTimer()">Reset</button>
     </div>
   </div>
-  <audio id="buzzer" src="buzzer.mp3"></audio>
+  <audio id="buzzer" src="Sweet Morning Alarm.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
